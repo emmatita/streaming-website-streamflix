@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamFlix</title>
+    <meta name="description" content="Movie streaming platform">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="upper-header-container">
+            <div class="zone-logo">
+                <img src="images/logo.png" width="100" alt="StreamFlix logo" for="logo-button" class="cursor-show" id="logo">
+                <!-- <button id="logo-button" hidden="hidden">home page</button> -->
+                <a href="index.html" id="logo-button" hidden="hidden">home</a>
+                <h1>StreamFlix</h1>
+            </div>
+            
+            <form role="search" aria-label="Recherche de films" class="search-zone">
+                <label for="search-input" class="visually-hidden">
+                    Rechercher un film
+                </label>
+                <input type="search"
+                    id="search-input"
+                    name="search"
+                    placeholder="Rechercher un film..."
+                    aria-describedby="search-help">
+
+                <div id="search-help" class="visually-hidden">
+                    Saisissez le nom du film recherché puis appuyez sur Entrée
+                </div>
+            </form>
+
+            <div class="zone-profil">
+                <img src="images/profil-utilisateur.png" width="100" alt="User picture" for="user-button" class="cursor-show" id="profile-picture">
+                <a href="user-profile.html" id="user-button" hidden="hidden">User profile</a>
+                <!-- <button id="user-button" hidden="hidden">user profile page</button> -->
+            </div>
+        </div>
+
+        <div class="menu-header-container">
+            <nav>
+                <a href="">Acceuil</a>
+                <a href="">Films</a>
+                <a href="">Séries</a>
+                <a href="">Ma liste</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="film-vedette">
+            <div class="infos-film">
+                <h2>Film Vedette</h2>
+                <img src="images/films/inception.webp" width="300px" alt="Inception movie poster">
+                <h3>Inception</h3>
+                <p>
+                    Description du film.
+                </p>
+            </div>
+
+            <div class="boutons-film">
+                <label for="watch-button">Regarder</label>
+                <button id="watch-button" hidden="hidden">film</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

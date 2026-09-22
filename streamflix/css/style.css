@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+body {
+    background-color: rgb(254, 254, 254);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.upper-header-container {
+    background-color: rgb(244, 191, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    color: black;
+}
+
+.zone-logo {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo {
+    width: 32px;
+    height: 32px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.cursor-show {
+    cursor: pointer;
+}
+
+.search-zone {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.zone-profil {
+    flex: 0 0 auto;
+}
+
+#profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #e8e000;
+}
+
+.menu-header-container {
+    background-color: #e8e000;
+}
+
+.menu-header-container nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-header-container nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.visually-hidden {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
