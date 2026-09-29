@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#film-vedette">
+        Aller directement au contenu principal
+    </a>
+
     <header>
         <div class="upper-header-container">
             <div class="zone-logo">
@@ -50,19 +54,224 @@
     </header>
 
     <main>
-        <section class="film-vedette">
-            <div class="infos-film">
-                <h2>Film Vedette</h2>
+        <section id="film-vedette">
+            <h2>Film Vedette</h2>
+            <article class="article-card">
+                <header class="article-header">
+                    <h3>Inception</h3>
+                </header>
+                
                 <img src="images/films/inception.webp" width="300px" alt="Inception movie poster">
-                <h3>Inception</h3>
-                <p>
-                    Description du film.
-                </p>
+                
+                <footer class="boutons-film">
+                    <p class="article-meta">
+                        Date de sortie: <time datetime="2010">2010</time>
+                        Durée du film: <time datetime="PT2H28MS">2h28</time>
+                        Note: <span>4.5/5</span>
+                        Genres: <span>Sci-Fi, Thriller</span>
+                    </p>
+                    
+                    <div class="bouton-lecture">
+                        <label for="watch-button">Regarder</label>
+                        <button id="watch-button" hidden="hidden">film</button>
+                    </div>
+
+                    <div class="bouton-infos">
+                        <label for="info-button">Plus d'infos</label>
+                        <button id="info-button" hidden="hidden">infos</button>
+                    </div>
+
+                    <div class="bouton-liste">
+                        <label for="list-button">Ma Liste</label>
+                        <button id="list-button" hidden="hidden">liste</button>
+                    </div>
+                </footer>
+            </article>
+        </section>
+
+        <section class="grille-films">
+            <h2>Nos Films</h2>
+            <div class="films-tendance">
+                <h3>Tendances</h3>
+
+                <article class="article-card">
+                    <header class="article-header">
+                        <h4>The Dark Knight</h4>
+                    </header>
+                    
+                    <img src="images/films/darknight.webp" width="200px" alt="The Dark Knight movie poster">
+                    
+                    <footer class="boutons-film">
+                        <p class="article-meta">
+                            Date de sortie: <time datetime="2008">2008</time>
+                            Durée du film: <time datetime="PT2H32MS">2h32</time>
+                            Note: <span>4.8/5</span>
+                            Genres: <span>Action, Crime, Drama</span>
+                        </p>
+                        <label for="watch-button">Regarder</label>
+                        <button id="watch-button" hidden="hidden">film</button>
+                    </footer>
+                </article>
+
+                <article class="article-card">
+                    <header class="article-header">
+                        <h4>Interstellar</h4>
+                    </header>
+                    
+                    <img src="images/films/Interstellar_film_poster.jpg" width="200px" alt="Interstellar movie poster">
+                    
+                    <footer class="boutons-film">
+                        <p class="article-meta">
+                            Date de sortie: <time datetime="2014">2014</time>
+                            Durée du film: <time datetime="PT2H49MS">2h49</time>
+                            Note: <span>4.7/5</span>
+                            Genres: <span>Sci-Fi, Drama</span>
+                        </p>
+                        <label for="watch-button">Regarder</label>
+                        <button id="watch-button" hidden="hidden">film</button>
+                    </footer>
+                </article>
+
+                <article class="article-card">
+                    <header class="article-header">
+                        <h4>Pulp Fiction</h4>
+                    </header>
+                    
+                    <img src="images/films/pulp_fiction.jpg" width="200px" alt="Pulp Fiction movie poster">
+                    
+                    <footer class="boutons-film">
+                        <p class="article-meta">
+                            Date de sortie: <time datetime="1994">1994</time>
+                            Durée du film: <time datetime="PT2H34MS">2h34</time>
+                            Note: <span>4.6/5</span>
+                            Genres: <span>Crime, Drama</span>
+                        </p>
+                        <label for="watch-button">Regarder</label>
+                        <button id="watch-button" hidden="hidden">film</button>
+                    </footer>
+                </article>
             </div>
 
-            <div class="boutons-film">
-                <label for="watch-button">Regarder</label>
-                <button id="watch-button" hidden="hidden">film</button>
+            <div class="films-recommandes">
+                <h3>Recommandés</h3>
+
+                <article class="article-card">
+                    <header class="article-header">
+                        <h4>Inception</h4>
+                    </header>
+                    
+                    <img src="images/films/inception.webp" width="200px" alt="Inception movie poster">
+                    
+                    <footer class="boutons-film">
+                        <p class="article-meta">
+                            Date de sortie: <time datetime="2010">2010</time>
+                            Durée du film: <time datetime="PT2H28MS">2h28</time>
+                            Note: <span>4.5/5</span>
+                            Genres: <span>Sci-Fi, Thriller</span>
+                        </p>
+                        <label for="watch-button">Regarder</label>
+                        <button id="watch-button" hidden="hidden">film</button>
+                    </footer>
+                </article>
+
+                <article class="article-card">
+                    <header class="article-header">
+                        <h4>The Matrix</h4>
+                    </header>
+                    
+                    <img src="images/films/matrix.jpeg" width="200px" alt="The Matrix movie poster">
+                    
+                    <footer class="boutons-film">
+                        <p class="article-meta">
+                            Date de sortie: <time datetime="1995">1995</time>
+                            Durée du film: <time datetime="PT2H16MS">2h16</time>
+                            Note: <span>4.5/5</span>
+                            Genres: <span>Sci-Fi, Action</span>
+                        </p>
+                        <label for="watch-button">Regarder</label>
+                        <button id="watch-button" hidden="hidden">film</button>
+                    </footer>
+                </article>
+
+                <article class="article-card">
+                    <header class="article-header">
+                        <h4>Forest Gump</h4>
+                    </header>
+                    
+                    <img src="images/films/forrest_gump.jpg" width="200px" alt="Forest Gump movie poster">
+                    
+                    <footer class="boutons-film">
+                        <p class="article-meta">
+                            Date de sortie: <time datetime="1994">1994</time>
+                            Durée du film: <time datetime="PT2H22MS">2h22</time>
+                            Note: <span>4.4/5</span>
+                            Genres: <span>Drama, Romance</span>
+                        </p>
+                        <label for="watch-button">Regarder</label>
+                        <button id="watch-button" hidden="hidden">film</button>
+                    </footer>
+                </article>
+            </div>
+
+            <div class="films-nouveaux">
+                <h3>Nouveautés</h3>
+
+                <article class="article-card">
+                    <header class="article-header">
+                        <h4>Interstellar</h4>
+                    </header>
+                    
+                    <img src="images/films/Interstellar_film_poster.jpg" width="200px" alt="Interstellar movie poster">
+                    
+                    <footer class="boutons-film">
+                        <p class="article-meta">
+                            Date de sortie: <time datetime="2014">2014</time>
+                            Durée du film: <time datetime="PT2H49MS">2h49</time>
+                            Note: <span>4.7/5</span>
+                            Genres: <span>Sci-Fi, Drama</span>
+                        </p>
+                        <label for="watch-button">Regarder</label>
+                        <button id="watch-button" hidden="hidden">film</button>
+                    </footer>
+                </article>
+
+                <article class="article-card">
+                    <header class="article-header">
+                        <h4>The Dark Knight</h4>
+                    </header>
+                    
+                    <img src="images/films/darknight.webp" width="200px" alt="The Dark Knight movie poster">
+                    
+                    <footer class="boutons-film">
+                        <p class="article-meta">
+                            Date de sortie: <time datetime="2008">2008</time>
+                            Durée du film: <time datetime="PT2H32MS">2h32</time>
+                            Note: <span>4.8/5</span>
+                            Genres: <span>Action, Crime, Drama</span>
+                        </p>
+                        <label for="watch-button">Regarder</label>
+                        <button id="watch-button" hidden="hidden">film</button>
+                    </footer>
+                </article>
+
+                <article class="article-card">
+                    <header class="article-header">
+                        <h4>Inception</h4>
+                    </header>
+                    
+                    <img src="images/films/inception.webp" width="200px" alt="Inception movie poster">
+                    
+                    <footer class="boutons-film">
+                        <p class="article-meta">
+                            Date de sortie: <time datetime="2010">2010</time>
+                            Durée du film: <time datetime="PT2H28MS">2h28</time>
+                            Note: <span>4.5/5</span>
+                            Genres: <span>Sci-Fi, Thriller</span>
+                        </p>
+                        <label for="watch-button">Regarder</label>
+                        <button id="watch-button" hidden="hidden">film</button>
+                    </footer>
+                </article>
             </div>
         </section>
     </main>
