@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <a class="skip-link" href="#film-vedette">
+    <a class="skip-link" href="#main-content">
         Aller directement au contenu principal
     </a>
 
     <header>
         <div class="upper-header-container">
             <div class="zone-logo">
-                <img src="images/logo.png" width="100" alt="StreamFlix logo" for="logo-button" class="cursor-show" id="logo">
-                <!-- <button id="logo-button" hidden="hidden">home page</button> -->
-                <a href="index.html" id="logo-button" hidden="hidden">home</a>
-                <h1>StreamFlix</h1>
+                <a href="#">
+                    <img src="images/logo.png" width="100" alt="" class="cursor-show" id="logo">
+                    <h1>StreamFlix</h1>
+                </a>
             </div>
             
             <form role="search" aria-label="Recherche de films" class="search-zone">
@@ -37,53 +37,50 @@
             </form>
 
             <div class="zone-profil">
-                <img src="images/profil-utilisateur.png" width="100" alt="User picture" for="user-button" class="cursor-show" id="profile-picture">
-                <a href="user-profile.html" id="user-button" hidden="hidden">User profile</a>
-                <!-- <button id="user-button" hidden="hidden">user profile page</button> -->
+                <a href="#">
+                    <img src="images/profil-utilisateur.png" width="100" alt="Profil Utilisateur" class="cursor-show" id="profile-picture">
+                </a>
             </div>
         </div>
 
         <div class="menu-header-container">
-            <nav>
-                <a href="">Acceuil</a>
-                <a href="">Films</a>
-                <a href="">Séries</a>
-                <a href="">Ma liste</a>
+            <nav aria-label="Navigation principale">
+                <a href="#">Accueil</a>
+                <a href="#">Films</a>
+                <a href="#">Séries</a>
+                <a href="#">Ma liste</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section id="film-vedette">
+    <main id="main-content">
+        <section>
             <h2>Film Vedette</h2>
             <article class="article-card">
                 <header class="article-header">
                     <h3>Inception</h3>
                 </header>
                 
-                <img src="images/films/inception.webp" width="300px" alt="Inception movie poster">
+                <img src="images/films/inception.webp" width="300" alt="Affiche du film Inception">
                 
                 <footer class="boutons-film">
                     <p class="article-meta">
                         Date de sortie: <time datetime="2010">2010</time>
-                        Durée du film: <time datetime="PT2H28MS">2h28</time>
+                        Durée du film: <time datetime="PT2H28M">2h28</time>
                         Note: <span>4.5/5</span>
                         Genres: <span>Sci-Fi, Thriller</span>
                     </p>
                     
                     <div class="bouton-lecture">
-                        <label for="watch-button">Regarder</label>
-                        <button id="watch-button" hidden="hidden">film</button>
+                        <a class="btn btn-watch" href="film.html?id=inception" data-film="inception" aria-label="Regarder Inception">Regarder</a>
                     </div>
 
                     <div class="bouton-infos">
-                        <label for="info-button">Plus d'infos</label>
-                        <button id="info-button" hidden="hidden">infos</button>
+                        <button class="btn btn-info" aria-label="Cliquer pour plus d'informations sur Inception">Plus d'infos</button>
                     </div>
 
                     <div class="bouton-liste">
-                        <label for="list-button">Ma Liste</label>
-                        <button id="list-button" hidden="hidden">liste</button>
+                        <button class="btn btn-list" aria-label="Ajouter Inception à ma liste">Ma Liste</button>
                     </div>
                 </footer>
             </article>
@@ -99,17 +96,16 @@
                         <h4>The Dark Knight</h4>
                     </header>
                     
-                    <img src="images/films/darknight.webp" width="200px" alt="The Dark Knight movie poster">
+                    <img src="images/films/darknight.webp" width="200" alt="Affiche du film The Dark Knight">
                     
                     <footer class="boutons-film">
                         <p class="article-meta">
                             Date de sortie: <time datetime="2008">2008</time>
-                            Durée du film: <time datetime="PT2H32MS">2h32</time>
+                            Durée du film: <time datetime="PT2H32M">2h32</time>
                             Note: <span>4.8/5</span>
                             Genres: <span>Action, Crime, Drama</span>
                         </p>
-                        <label for="watch-button">Regarder</label>
-                        <button id="watch-button" hidden="hidden">film</button>
+                        <a class="btn btn-watch" href="film.html?id=the-dark-knight" data-film="the-dark-knight" aria-label="Regarder The Dark Knight">Regarder</a>
                     </footer>
                 </article>
 
@@ -118,17 +114,16 @@
                         <h4>Interstellar</h4>
                     </header>
                     
-                    <img src="images/films/Interstellar_film_poster.jpg" width="200px" alt="Interstellar movie poster">
+                    <img src="images/films/Interstellar_film_poster.jpg" width="200" alt="Affiche du film Interstellar">
                     
                     <footer class="boutons-film">
                         <p class="article-meta">
                             Date de sortie: <time datetime="2014">2014</time>
-                            Durée du film: <time datetime="PT2H49MS">2h49</time>
+                            Durée du film: <time datetime="PT2H49M">2h49</time>
                             Note: <span>4.7/5</span>
                             Genres: <span>Sci-Fi, Drama</span>
                         </p>
-                        <label for="watch-button">Regarder</label>
-                        <button id="watch-button" hidden="hidden">film</button>
+                        <a class="btn btn-watch" href="film.html?id=interstellar" data-film="interstellar" aria-label="Regarder Interstellar">Regarder</a>
                     </footer>
                 </article>
 
@@ -137,17 +132,16 @@
                         <h4>Pulp Fiction</h4>
                     </header>
                     
-                    <img src="images/films/pulp_fiction.jpg" width="200px" alt="Pulp Fiction movie poster">
+                    <img src="images/films/pulp_fiction.jpg" width="200" alt="Affiche du film Pulp Fiction">
                     
                     <footer class="boutons-film">
                         <p class="article-meta">
                             Date de sortie: <time datetime="1994">1994</time>
-                            Durée du film: <time datetime="PT2H34MS">2h34</time>
+                            Durée du film: <time datetime="PT2H34M">2h34</time>
                             Note: <span>4.6/5</span>
                             Genres: <span>Crime, Drama</span>
                         </p>
-                        <label for="watch-button">Regarder</label>
-                        <button id="watch-button" hidden="hidden">film</button>
+                        <a class="btn btn-watch" href="film.html?id=pulp-fiction" data-film="pulp-fiction" aria-label="Regarder Pulp Fiction">Regarder</a>
                     </footer>
                 </article>
             </div>
@@ -160,17 +154,16 @@
                         <h4>Inception</h4>
                     </header>
                     
-                    <img src="images/films/inception.webp" width="200px" alt="Inception movie poster">
+                    <img src="images/films/inception.webp" width="200" alt="Affiche du film Inception">
                     
                     <footer class="boutons-film">
                         <p class="article-meta">
                             Date de sortie: <time datetime="2010">2010</time>
-                            Durée du film: <time datetime="PT2H28MS">2h28</time>
+                            Durée du film: <time datetime="PT2H28M">2h28</time>
                             Note: <span>4.5/5</span>
                             Genres: <span>Sci-Fi, Thriller</span>
                         </p>
-                        <label for="watch-button">Regarder</label>
-                        <button id="watch-button" hidden="hidden">film</button>
+                        <a class="btn btn-watch" href="film.html?id=inception" data-film="inception" aria-label="Regarder Inception">Regarder</a>
                     </footer>
                 </article>
 
@@ -179,36 +172,34 @@
                         <h4>The Matrix</h4>
                     </header>
                     
-                    <img src="images/films/matrix.jpeg" width="200px" alt="The Matrix movie poster">
+                    <img src="images/films/matrix.jpeg" width="200" alt="Affiche du film The Matrix">
                     
                     <footer class="boutons-film">
                         <p class="article-meta">
                             Date de sortie: <time datetime="1995">1995</time>
-                            Durée du film: <time datetime="PT2H16MS">2h16</time>
+                            Durée du film: <time datetime="PT2H16M">2h16</time>
                             Note: <span>4.5/5</span>
                             Genres: <span>Sci-Fi, Action</span>
                         </p>
-                        <label for="watch-button">Regarder</label>
-                        <button id="watch-button" hidden="hidden">film</button>
+                        <a class="btn btn-watch" href="film.html?id=the-matrix" data-film="the-matrix" aria-label="Regarder The Matrix">Regarder</a>
                     </footer>
                 </article>
 
                 <article class="article-card">
                     <header class="article-header">
-                        <h4>Forest Gump</h4>
+                        <h4>Forrest Gump</h4>
                     </header>
                     
-                    <img src="images/films/forrest_gump.jpg" width="200px" alt="Forest Gump movie poster">
+                    <img src="images/films/forrest_gump.jpg" width="200" alt="Affiche du film Forrest Gump">
                     
                     <footer class="boutons-film">
                         <p class="article-meta">
                             Date de sortie: <time datetime="1994">1994</time>
-                            Durée du film: <time datetime="PT2H22MS">2h22</time>
+                            Durée du film: <time datetime="PT2H22M">2h22</time>
                             Note: <span>4.4/5</span>
                             Genres: <span>Drama, Romance</span>
                         </p>
-                        <label for="watch-button">Regarder</label>
-                        <button id="watch-button" hidden="hidden">film</button>
+                        <a class="btn btn-watch" href="film.html?id=forrest-gump" data-film="forrest-gump" aria-label="Regarder Forrest Gump">Regarder</a>
                     </footer>
                 </article>
             </div>
@@ -221,17 +212,16 @@
                         <h4>Interstellar</h4>
                     </header>
                     
-                    <img src="images/films/Interstellar_film_poster.jpg" width="200px" alt="Interstellar movie poster">
+                    <img src="images/films/Interstellar_film_poster.jpg" width="200" alt="Affiche du film Interstellar">
                     
                     <footer class="boutons-film">
                         <p class="article-meta">
                             Date de sortie: <time datetime="2014">2014</time>
-                            Durée du film: <time datetime="PT2H49MS">2h49</time>
+                            Durée du film: <time datetime="PT2H49M">2h49</time>
                             Note: <span>4.7/5</span>
                             Genres: <span>Sci-Fi, Drama</span>
                         </p>
-                        <label for="watch-button">Regarder</label>
-                        <button id="watch-button" hidden="hidden">film</button>
+                        <a class="btn btn-watch" href="film.html?id=interstellar" data-film="interstellar" aria-label="Regarder Interstellar">Regarder</a>
                     </footer>
                 </article>
 
@@ -240,17 +230,16 @@
                         <h4>The Dark Knight</h4>
                     </header>
                     
-                    <img src="images/films/darknight.webp" width="200px" alt="The Dark Knight movie poster">
+                    <img src="images/films/darknight.webp" width="200" alt="Affiche du film The Dark Knight">
                     
                     <footer class="boutons-film">
                         <p class="article-meta">
                             Date de sortie: <time datetime="2008">2008</time>
-                            Durée du film: <time datetime="PT2H32MS">2h32</time>
+                            Durée du film: <time datetime="PT2H32M">2h32</time>
                             Note: <span>4.8/5</span>
                             Genres: <span>Action, Crime, Drama</span>
                         </p>
-                        <label for="watch-button">Regarder</label>
-                        <button id="watch-button" hidden="hidden">film</button>
+                        <a class="btn btn-watch" href="film.html?id=the-dark-knight" data-film="the-dark-knight" aria-label="Regarder The Dark Knight">Regarder</a>
                     </footer>
                 </article>
 
@@ -259,17 +248,16 @@
                         <h4>Inception</h4>
                     </header>
                     
-                    <img src="images/films/inception.webp" width="200px" alt="Inception movie poster">
+                    <img src="images/films/inception.webp" width="200" alt="Affiche du film Inception">
                     
                     <footer class="boutons-film">
                         <p class="article-meta">
                             Date de sortie: <time datetime="2010">2010</time>
-                            Durée du film: <time datetime="PT2H28MS">2h28</time>
+                            Durée du film: <time datetime="PT2H28M">2h28</time>
                             Note: <span>4.5/5</span>
                             Genres: <span>Sci-Fi, Thriller</span>
                         </p>
-                        <label for="watch-button">Regarder</label>
-                        <button id="watch-button" hidden="hidden">film</button>
+                        <a class="btn btn-watch" href="film.html?id=inception" data-film="inception" aria-label="Regarder Inception">Regarder</a>
                     </footer>
                 </article>
             </div>
@@ -278,20 +266,20 @@
 
     <footer>
         <div class="container">
-            <nav>
+            <nav aria-label="Liens du pied de page">
                 <ul>
-                    <li><a href="">Help</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Terms</a></li>
-                    <li><a href="">Privacy</a></li>
+                    <li><a href="#">Aide</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Mentions légales</a></li>
                 </ul>
             </nav>
 
             <p>Follow us on social media:</p>
-            <nav>
-                <a href="">Instagram</a>
-                <a href="">X</a>
-                <a href="">Facebook</a>
+            <nav aria-label="Réseaux sociaux">
+                <a href="#">Instagram</a>
+                <a href="#">X</a>
+                <a href="#">Facebook</a>
             </nav>
 
             <p>&copy; 2026 StreamFlix, Inc.</p>
