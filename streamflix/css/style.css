@@ -263,6 +263,7 @@ h1 {
     border: none;
     outline: none;
     background-color: var(--surface-color);
+    color: var(--highlight-color);
 }
 .zone-profil {
     margin-right: 1rem;
@@ -286,6 +287,9 @@ h1 {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 600;
+}
+.menu-header-container nav a:hover {
+    color: var(--primary-hover-color);
 }
 
 /* Accessibilité */
