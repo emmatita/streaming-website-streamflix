@@ -35,8 +35,8 @@ button {
     --text-color-muted: #a685ba;
     
     /* Accents */
-    --primary-color: #6a03c4;
-    --primary-hover-color: #9210e8;
+    --primary-color: #9703c4;
+    --primary-hover-color: #e810c4;
     --accent-color: #b57bff;
     
     /* UI */
@@ -234,6 +234,8 @@ body > header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    border-bottom: 1px solid var(--surface-color);
+    gap: 2rem;
 }
 .zone-logo a {
     display: flex;
@@ -248,7 +250,7 @@ body > header {
 h1 {
     font-weight: bold;
     font-size: 1.2rem;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 .search-zone {
     flex: 1;
@@ -277,7 +279,7 @@ h1 {
 }
 .menu-header-container {
     background-color: var(--bg-dark-color);
-    padding-bottom: 10px;
+    padding: 0.5rem 0;
 }
 .menu-header-container nav {
     display: flex;
@@ -290,6 +292,63 @@ h1 {
 }
 .menu-header-container nav a:hover {
     color: var(--primary-hover-color);
+}
+
+/* Style pour Footer */
+body > footer {
+    margin-top: 4rem;
+    background-color: var(--bg-dark-color);
+    color: var(--text-color);
+    border-top: 1px solid var(--surface-color);
+}
+.footer-container {
+    padding: 2rem 1rem 1rem;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-main nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.footer-main nav a {
+    text-decoration: none;
+    color: var(--text-color-muted);
+}
+.footer-main nav a:hover {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+.socials {
+    border-top: 1px solid var(--surface-color);
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--surface-color);
+    text-align: center;
+    color: var(--surface-raised-color);
+    font-size: 0.875rem;
+}
+.liens-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+}
+.liens-footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    margin-top: 0.7rem;
 }
 
 /* Accessibilité */
