@@ -13,6 +13,7 @@
   &:hover {
     background-color: darken(variables.$primary-red, 10%);
     border-color: darken(variables.$primary-red, 10%);
+    transform: translateY(-4px);
   }
 }
 
@@ -23,6 +24,7 @@
   &:hover {
     background-color: variables.$text-light;
     color: variables.$primary-dark;
+    transform: translateY(-4px);
   }
 }
 
@@ -35,5 +37,6 @@
     background-color: variables.$primary-dark;
     border-color: variables.$primary-dark;
     color: variables.$text-light;
+    transform: translateY(-4px);
   }
 }

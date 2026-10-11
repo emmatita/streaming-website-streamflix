@@ -1,5 +1,48 @@
+@use '../utils/variables' as variables;
+
 .grille-films {
   max-width: 1200px;
   margin-inline: auto;
   padding-inline: 1rem;
+}
+
+// Titre du film vedette
+.titre-vedette {
+  color: variables.$text-light;
+  font-size: variables.$font-size-large;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  padding-left: 0.75rem;
+  border-left: 4px solid variables.$primary-red;
+}
+
+// Titre principal du catalogue
+.titre-section {
+  color: variables.$text-light;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  margin-top: variables.$spacing-large; 
+
+  &::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 4px;
+    margin-top: 0.75rem;
+    background-color: variables.$primary-red;
+    border-radius: 2px;
+  }
+}
+
+// Tendances, Recommandés, Nouveautés
+.titre-categorie {
+  color: variables.$text-light;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: variables.$spacing-large 0;
+
+  &::after {
+    content: ' ›';
+    color: variables.$primary-red;
+  }
 }

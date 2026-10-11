@@ -1,0 +1,96 @@
+
+@use '../utils/variables' as variables;
+
+.site-footer {
+  margin-top: 5rem;
+  background: linear-gradient(
+    135deg,
+    variables.$primary-dark,
+    #171218
+  );
+  border-top: 2px solid variables.$primary-red;
+  color: variables.$text-muted;
+
+  .footer-main {
+    padding-bottom: 2rem;
+  }
+
+  h2 {
+    margin-bottom: 1.25rem;
+    color: variables.$text-light;
+    font-size: variables.$font-size-base;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .liens-footer nav,
+  .socials nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: variables.$spacing-small;
+  }
+
+  a {
+    color: variables.$text-muted;
+    text-decoration: none;
+    transition:
+      color variables.$transition-fast,
+      transform variables.$transition-fast;
+
+    &:hover,
+    &:focus-visible {
+      color: variables.$primary-red;
+      transform: translateX(4px);
+    }
+
+    &:focus-visible {
+      outline: 2px solid variables.$primary-red;
+      outline-offset: 4px;
+    }
+  }
+
+  .socials {
+    p {
+      margin-bottom: variables.$spacing-base;
+      font-size: variables.$font-size-small;
+      line-height: 1.6;
+    }
+
+    h2 span {
+      color: variables.$primary-red;
+    }
+
+    nav {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: variables.$spacing-base;
+    }
+
+    nav a {
+      padding: 0.45rem 0.75rem;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: variables.$border-radius-card;
+      font-size: 0.875rem;
+
+      &:hover,
+      &:focus-visible {
+        border-color: variables.$primary-red;
+        background-color: rgba(229, 9, 20, 0.1);
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding-top: variables.$spacing-large;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    text-align: center;
+
+    p {
+      margin: 0;
+      font-size: variables.$font-size-small;
+    }
+  }
+}

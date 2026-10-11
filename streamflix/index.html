@@ -92,7 +92,9 @@
 
     <main id="main-content">
         <section class="section-hero">
-            <h2>Film Vedette</h2>
+
+            <h2 class="titre-vedette">Film Vedette</h2>
+
             <article class="card article-card">
                 <img src="images/films/inception.webp" 
                     alt="Affiche du film Inception"
@@ -114,7 +116,7 @@
                         </p>
                     </div>
 
-                    <div  class="boutons-film">
+                    <div  class="boutons-film d-flex flex-wrap gap-2">
                         <a class="btn btn-watch btn-primary" href="film.html?id=inception" data-film="inception" aria-label="Regarder Inception">Regarder</a>
                         <button class="btn btn-info btn-details" aria-label="Cliquer pour plus d'informations sur Inception">Plus d'infos</button>
                         <button class="btn btn-list btn-outline-light" aria-label="Ajouter Inception à ma liste">Ma Liste</button>
@@ -125,11 +127,11 @@
 
         <section class="grille-films">
 
-            <h2>Nos Films</h2>
+            <h2 class="titre-section">Nos Films</h2>
 
             <div class="films-tendance">
 
-                <h3>Tendances</h3>
+                <h3 class="titre-categorie">Tendances</h3>
 
                 <div class="row g-4">
 
@@ -217,7 +219,7 @@
 
             <div class="films-recommandes">
 
-                <h3>Recommandés</h3>
+                <h3 class="titre-categorie">Recommandés</h3>
 
                 <div class="row g-4">
 
@@ -305,7 +307,7 @@
 
             <div class="films-nouveaux">
 
-                <h3>Nouveautés</h3>
+                <h3 class="titre-categorie">Nouveautés</h3>
 
                 <div class="row g-4">
 
@@ -394,38 +396,48 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-main">
-                <div class="liens-footer" aria-label="Liens du pied de page">
-                    <div>
-                        <p>à Propos</p>
+    <footer class="site-footer">
+        <div class="footer-container container py-4 py-md-5">
+
+            <div class="footer-main row g-4">
+
+                <div class="liens-footer col-12 col-md-7 row g-4" aria-label="Liens du pied de page">
+                    
+                    <div class="col-6">
+                        <h2>À propos</h2>
                         <nav>
                             <a href="#">Aide</a>
                             <a href="#">Contact</a>
                         </nav>
                     </div>
 
-                    <div>
-                        <p>Informations</p>
+                    <div class="col-6">
+                        <h2>Informations</h2>
                         <nav>
                             <a href="#">Conditions d'utilisation</a>
                             <a href="#">Mentions légales</a>
                         </nav>
                     </div>
+
                 </div>
                 
-                <div class="socials">
-                    <p>Suivez nous ! </p>
+                <div class="socials col-12 col-md-5">
+                    <h2>Suivez nous <span>!</span></h2>
+                    <p>Retrouvez StreamFlix sur vos réseaux préférés.</p>
+
                     <nav aria-label="Réseaux sociaux">
-                        <a href="#">Instagram</a>
-                        <a href="#">X</a>
-                        <a href="#">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="X">X</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
                     </nav>
                 </div>
     
             </div>
-            <p class="footer-bottom">&copy; 2026 StreamFlix, Inc.</p>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 StreamFlix, Inc.</p>
+            </div>
+
         </div>
     </footer>
 

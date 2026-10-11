@@ -2,6 +2,7 @@
 
 header .navbar {
   background-color: variables.$primary-dark;
+  margin-bottom: variables.$spacing-large;
 }
 
 header .navbar-brand,
@@ -16,4 +17,16 @@ header .navbar-nav .nav-link:focus {
 
 header .navbar-nav .nav-link.active {
   color: variables.$primary-red;
+}
+
+.zone-profil {
+    margin-right: 1rem;
+
+    #profile-picture {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        object-fit: cover;
+        background-color: variables.$secondary-gray;
+    }
 }

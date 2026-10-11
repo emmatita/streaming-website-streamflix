@@ -32,18 +32,18 @@
                 max-width: 500px;
             }
         }
-    }
 
-    .article-card::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-        background: linear-gradient(
-            90deg,
-            variables.$secondary-dark 0%,
-            rgba(22, 16, 27, 0.78) 50%,
-            rgba(22, 16, 27, 0.1) 100%
-        )
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background: linear-gradient(
+                90deg,
+                variables.$secondary-dark 0%,
+                rgba(22, 16, 27, 0.78) 50%,
+                rgba(22, 16, 27, 0.1) 100%
+            )
+        }
     }
 }
