@@ -1,9 +1,49 @@
+// _hero.scss
+@use '../utils/variables' as variables;
+
 .section-hero {
     max-width: 1200px;
     margin-inline: auto;
     padding-inline: 1rem;
 
-    img {
-        max-width: 500px;
+    .article-card {
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            max-width: none;
+            padding: 0;
+            z-index: -2;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .card-body {
+            position: relative;
+            z-index: 1;
+            background-color: transparent;
+
+            p { 
+                max-width: 500px;
+            }
+        }
+    }
+
+    .article-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: linear-gradient(
+            90deg,
+            variables.$secondary-dark 0%,
+            rgba(22, 16, 27, 0.78) 50%,
+            rgba(22, 16, 27, 0.1) 100%
+        )
     }
 }

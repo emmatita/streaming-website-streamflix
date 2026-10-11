@@ -10,17 +10,22 @@
 .article-card {
   display: flex;
   flex-direction: column;
+  border: 0px;
+  border-radius: variables.$border-radius-card;
 
   .card-body {
       display: flex;
       flex-direction: column;
       flex: 1;
       background-color: variables.$secondary-dark;
-      color: variables.$text-muted;
 
-      h4 {
+      .card-title {
         color: variables.$text-light;
         text-transform: uppercase;
+      }
+
+      .card-text {
+        color: variables.$text-muted;
       }
   }
 

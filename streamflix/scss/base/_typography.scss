@@ -1,7 +1,21 @@
+// _typographie.scss
+
 // Importation des variables
 @use '../utils/variables' as variables;
+
+@font-face {
+    font-family: Coolvetica Rg;
+    src: url(../fonts/coolvetica-rg.otf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 // Styles de base
 body {
   font-family: variables.$font-primary;
+}
+
+h1, h2, h3, h4 {
+    font-family: variables.$font-primary;
 }
