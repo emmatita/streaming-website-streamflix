@@ -1,7 +1,10 @@
 # streaming-website-streamflix
 Model website for an imaginary movie streaming service called StreamFlix
 
-## Current state of the website - 10/10/2026 ##
+## Current state of the website - 11/10/2026 ##
+<img width="1903" height="1956" alt="image" src="https://github.com/user-attachments/assets/364d5cf7-5250-4988-8d8d-37b064d6e98c" />
+
+## Previous state of the website - 10/10/2026 ##
 Top         |  Bottom
 :-------------------------:|:-------------------------:
 <img width="554" height="704" alt="Capture d&#39;écran 2026-10-10 091941" src="https://github.com/user-attachments/assets/f9e57398-c34a-4ca7-a3c2-0af1bfe36dcd" />  |  <img width="557" height="697" alt="Capture d&#39;écran 2026-10-10 091951" src="https://github.com/user-attachments/assets/6c24950f-b385-42b3-8fd1-3f7be0d939d6" />
