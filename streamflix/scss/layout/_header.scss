@@ -3,6 +3,7 @@
 header .navbar {
   background-color: variables.$primary-dark;
   margin-bottom: variables.$spacing-large;
+  border-bottom: 1px solid variables.$primary-red;
 }
 
 header .navbar-brand,
