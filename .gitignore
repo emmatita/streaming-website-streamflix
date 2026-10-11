@@ -1,0 +1,10 @@
+# dépendances npm
+node_modules/
+
+# fichiers générés par Sass
+css/*.css.map
+
+# fichiers système et éditeur
+.DS_Store
+Thumbs.db
+.vscode/
