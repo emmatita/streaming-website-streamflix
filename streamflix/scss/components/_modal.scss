@@ -1,0 +1,31 @@
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1050;
+    padding: 2rem 1rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow-y: auto;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #221f1f;
+    color: #ffffff;
+}
+
+.close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+}

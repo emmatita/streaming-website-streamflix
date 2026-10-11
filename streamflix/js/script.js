@@ -1,4 +1,6 @@
-// affichage/masquage des sections de films
+// ===================================
+// EXERCICE 1 : Afficher/masquer sections
+// ===================================
 const boutons = document.querySelectorAll('.btn-toggle-section');
 
 boutons.forEach(function (bouton) {
@@ -25,7 +27,9 @@ boutons.forEach(function (bouton) {
     });
 });
 
-// compter les films dans le catalogue
+// ===================================
+// EXERCICE 2 : Compteur de films
+// ===================================
 function compterFilmsUniques() {
     // Récupérer tous les articles de films
     const films = document.querySelectorAll('article[data-film]');
@@ -53,7 +57,9 @@ function afficherCompteurFilms() {
 
 afficherCompteurFilms();
 
-// mettre le film en vu si regardé
+// ===================================
+// EXERCICE 3 : Films vus
+// ===================================
 function activerFilmsVus() {
     const cartesFilms = document.querySelectorAll('.article-card');
 
@@ -85,7 +91,9 @@ function activerFilmsVus() {
 
 activerFilmsVus();
 
-// rechercher des films dans la barre de recherche
+// ===================================
+// EXERCICE 4 : Recherche
+// ===================================
 function activerRechercheFilms() {
     const searchInput = document.querySelector('#search');
     const cartesFilms = document.querySelectorAll('.article-card');
@@ -103,7 +111,7 @@ function activerRechercheFilms() {
         if (sectionHero) {
             sectionHero.style.display = recherche === '' ? '' : 'none';
         }
-        
+
         let nombreResultats = 0;
 
         cartesFilms.forEach(function (carte) {
@@ -151,3 +159,54 @@ function afficherMessageRecherche(nombreResultats, recherche) {
 }
 
 activerRechercheFilms();
+
+// ===================================
+// EXERCICE 5 : Modal
+// ===================================
+function openModal(title) {
+    const modal = document.querySelector('#modal');
+    const modalBody = document.querySelector('#modal-body');
+
+    modalBody.replaceChildren();
+
+    const titre = document.createElement('h2');
+    titre.textContent = title;
+
+    modalBody.appendChild(titre);
+    modal.style.display = 'block';
+}
+
+function closeModal() {
+    const modal = document.querySelector('#modal');
+    modal.style.display = 'none';
+}
+
+function activerModalFilms() {
+    const cartesFilms = document.querySelectorAll('.article-card');
+    const boutonFermer = document.querySelector('#modal .close');
+
+    cartesFilms.forEach(function (carte) {
+        carte.addEventListener('click', function (event) {
+            if (event.target.closest('button, a')) {
+                return;
+            }
+
+            const titre = carte.querySelector('.card-title');
+
+            if (titre) {
+                openModal(titre.textContent.trim());
+            }
+        });
+    });
+
+    if (boutonFermer) {
+        boutonFermer.addEventListener('click', function () {
+            closeModal();
+        });
+    } else {
+        console.error('Bouton de fermeture introuvable');
+    }
+}
+
+activerModalFilms();
+
