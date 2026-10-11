@@ -1,4 +1,4 @@
-// Sélectionner tous les boutons Masquer/Afficher
+// affichage/masquage des sections de films
 const boutons = document.querySelectorAll('.btn-toggle-section');
 
 boutons.forEach(function (bouton) {
@@ -24,3 +24,32 @@ boutons.forEach(function (bouton) {
         }
     });
 });
+
+// compter les films dans le catalogue
+function compterFilmsUniques() {
+    // Récupérer tous les articles de films
+    const films = document.querySelectorAll('article[data-film]');
+
+    // Stocker les identifiants sans doublons
+    const filmsUniques = new Set();
+
+    films.forEach(function (film) {
+        filmsUniques.add(film.dataset.film);
+    });
+
+    return filmsUniques.size;
+}
+
+function afficherCompteurFilms() {
+    const compteur = document.querySelector('#compteur-films');
+
+    if (!compteur) return;
+
+    const nombreFilms = compterFilmsUniques();
+
+    compteur.textContent =
+        `Catalogue : ${nombreFilms} films disponibles`;
+}
+
+afficherCompteurFilms();
+
