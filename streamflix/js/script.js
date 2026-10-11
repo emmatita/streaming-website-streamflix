@@ -85,3 +85,69 @@ function activerFilmsVus() {
 
 activerFilmsVus();
 
+// rechercher des films dans la barre de recherche
+function activerRechercheFilms() {
+    const searchInput = document.querySelector('#search');
+    const cartesFilms = document.querySelectorAll('.article-card');
+
+    // Vérifier que le champ de recherche existe
+    if (!searchInput) {
+        return;
+    }
+
+    searchInput.addEventListener('input', function () {
+        const recherche = searchInput.value.toLowerCase().trim();
+
+        const sectionHero = document.querySelector('.section-hero');
+
+        if (sectionHero) {
+            sectionHero.style.display = recherche === '' ? '' : 'none';
+        }
+        
+        let nombreResultats = 0;
+
+        cartesFilms.forEach(function (carte) {
+            const titre = carte.querySelector('.card-title');
+
+            if (!titre) {
+                return;
+            }
+
+            const correspond = titre.textContent
+                .toLowerCase()
+                .includes(recherche);
+
+            // Afficher ou masquer la carte
+            carte.style.display = correspond ? '' : 'none';
+
+            if (correspond) {
+                nombreResultats++;
+            }
+        });
+
+        afficherMessageRecherche(nombreResultats, recherche);
+    });
+}
+
+function afficherMessageRecherche(nombreResultats, recherche) {
+    let message = document.querySelector('#message-recherche');
+
+    // Créer le message s'il n'existe pas encore
+    if (!message) {
+        message = document.createElement('p');
+        message.id = 'message-recherche';
+        message.textContent = 'Aucun résultat';
+
+        const grilleFilms = document.querySelector('.grille-films');
+
+        if (grilleFilms) {
+            grilleFilms.prepend(message);
+        }
+    }
+
+    // Afficher le message uniquement si une recherche ne trouve rien
+    message.style.display =
+        recherche !== '' && nombreResultats === 0 ? 'block' : 'none';
+}
+
+activerRechercheFilms();
