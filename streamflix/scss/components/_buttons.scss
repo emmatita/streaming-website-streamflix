@@ -1,0 +1,5 @@
+@use 'utils/mixins';
+
+.btn {
+  @include mixins.hover-transition(transform);
+}

@@ -1,0 +1,13 @@
+@use 'variables';
+
+// mixin pour centrer un élément
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// mixin pour ajouter une transition hover
+@mixin hover-transition($property: all) {
+    transition: $property variables.$transition-fast;
+}

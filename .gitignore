@@ -1,10 +1,12 @@
 # dépendances npm
-node_modules/
+streamflix/node_modules/
 
 # fichiers générés par Sass
-css/*.css.map
+streamflix/css/*.css.map
 
 # fichiers système et éditeur
 .DS_Store
 Thumbs.db
+
+# cvnfiguration locale de VS Code
 .vscode/
