@@ -2,6 +2,11 @@
 Model website for an imaginary movie streaming service called StreamFlix
 
 ## Current state of the website - 11/10/2026 ##
+Top         |  Bottom
+:-------------------------:|:-------------------------:
+<img width="1906" height="1956" alt="image" src="https://github.com/user-attachments/assets/0e27ba0a-f7ef-464f-9768-5b720f8d8a00" />  |  <img width="1894" height="1948" alt="image" src="https://github.com/user-attachments/assets/9e86cc87-0f5a-410b-850b-d845e6f868b4" />
+
+## Previous state of the website - 11/10/2026 ##
 <img width="1903" height="1956" alt="image" src="https://github.com/user-attachments/assets/364d5cf7-5250-4988-8d8d-37b064d6e98c" />
 
 ## Previous state of the website - 10/10/2026 ##
