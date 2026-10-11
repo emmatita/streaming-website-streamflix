@@ -53,3 +53,35 @@ function afficherCompteurFilms() {
 
 afficherCompteurFilms();
 
+// mettre le film en vu si regardé
+function activerFilmsVus() {
+    const cartesFilms = document.querySelectorAll('.article-card');
+
+    cartesFilms.forEach(function (carte) {
+        carte.addEventListener('click', function (event) {
+            // Ignorer les clics sur les boutons et les liens
+            if (event.target.closest('button, a')) {
+                return;
+            }
+
+            // Récupérer l'identifiant du film cliqué
+            const identifiantFilm = carte.dataset.film;
+
+            // Sélectionner toutes les cartes du même film
+            const cartesDuMemeFilm = document.querySelectorAll(
+                `[data-film="${identifiantFilm}"]`
+            );
+
+            // Vérifier si le film est déjà marqué comme vu
+            const estVu = !carte.classList.contains('watched');
+
+            // Appliquer le même état à toutes ses cartes
+            cartesDuMemeFilm.forEach(function (carteFilm) {
+                carteFilm.classList.toggle('watched', estVu);
+            });
+        });
+    });
+}
+
+activerFilmsVus();
+
