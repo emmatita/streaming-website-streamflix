@@ -1,3 +1,5 @@
+@use '../utils/variables' as variables;
+
 // regle pour les images de films dans les cartes
 .affiche-film {
   width: 100%;
@@ -13,6 +15,13 @@
       display: flex;
       flex-direction: column;
       flex: 1;
+      background-color: variables.$secondary-dark;
+      color: variables.$text-muted;
+
+      h4 {
+        color: variables.$text-light;
+        text-transform: uppercase;
+      }
   }
 
   .boutons-film {

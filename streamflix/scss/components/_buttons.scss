@@ -1,5 +1,39 @@
 @use '../utils/mixins' as mixins;
+@use '../utils/variables' as variables;
 
 .btn {
   @include mixins.hover-transition(transform);
+}
+
+.btn-watch {
+  background-color: variables.$primary-red;
+  border-color: variables.$primary-red;
+  color: variables.$text-light;
+
+  &:hover {
+    background-color: darken(variables.$primary-red, 10%);
+    border-color: darken(variables.$primary-red, 10%);
+  }
+}
+
+.btn-list {
+  color: variables.$text-light;
+  border-color: variables.$text-light;
+
+  &:hover {
+    background-color: variables.$text-light;
+    color: variables.$primary-dark;
+  }
+}
+
+.btn-details {
+  background-color: variables.$secondary-gray;
+  border-color: variables.$secondary-gray;
+  color: variables.$text-light;
+
+  &:hover {
+    background-color: variables.$primary-dark;
+    border-color: variables.$primary-dark;
+    color: variables.$text-light;
+  }
 }

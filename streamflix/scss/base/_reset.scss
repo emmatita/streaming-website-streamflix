@@ -1,0 +1,8 @@
+// Importation des variables
+@use '../utils/variables' as variables;
+
+// Styles de base
+body {
+  color: variables.$text-light;
+  background-color: variables.$primary-dark;
+}
