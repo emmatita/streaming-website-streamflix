@@ -1,0 +1,21 @@
+// regle pour les images de films dans les cartes
+.affiche-film {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+
+  .card-body {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+  }
+
+  .boutons-film {
+    margin-top: auto;
+  }
+}
